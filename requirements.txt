@@ -1,0 +1,15 @@
+# Core library: graph construction and retrieval.
+# CPU is sufficient for everything here -- the graph embeds in minutes for a few thousand documents,
+# and the embedding cache means that cost is paid once.
+numpy>=1.24
+torch>=2.0                    # CPU build is fine; see pytorch.org for the right index URL
+transformers>=4.40            # loads jinaai/jina-embeddings-v3 via trust_remote_code
+einops>=0.7                   # required by the Jina v3 remote code
+openai>=1.30                  # any OpenAI-compatible endpoint, incl. Azure / vLLM / Ollama
+
+# Evaluation baselines.
+rank-bm25>=0.2.2
+
+# Fine-tuning (finetuning/) is GPU-only and intentionally NOT pinned here -- installing unsloth pulls
+# a large CUDA stack that the retrieval side does not need. Install separately when training:
+#   pip install unsloth trl peft accelerate bitsandbytes datasets

@@ -1,0 +1,12 @@
+{
+  "total_valid": 1435,
+  "train_size": 1385,
+  "eval_size": 50,
+  "seed": 42,
+  "invalid_skipped": 13,
+  "steps": [
+    "step1_pronoun",
+    "step2_reference",
+    "step4_extraction"
+  ]
+}

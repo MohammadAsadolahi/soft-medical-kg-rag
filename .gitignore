@@ -1,0 +1,24 @@
+# Generated data: checkpoints, graphs, embedding caches, benchmark runs.
+# All of it is reproducible from the scripts, and the embedding caches are hundreds of MB.
+data/
+evaluation/results/
+finetuning/training_data/*.jsonl
+finetuning/finetuned_models/
+
+# Secrets
+.env
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

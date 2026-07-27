@@ -1,0 +1,18 @@
+{
+  "id": "mohammadasadolahi/qwen3-8b-medical-relation-extraction",
+  "title": "Qwen3-8B Medical Relation Extraction Fine-tune",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true",
+  "dataset_sources": [
+    "mohammadasadolahi/medical-relation-extraction-training"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": [
+    "qwen-lm/qwen-3/transformers/qwen3-8b/1"
+  ]
+}
